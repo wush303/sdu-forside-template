@@ -1,13 +1,25 @@
 \documentclass[12pt]{article}
-\title{Opgavens navn: En analyse af opgaver}
-\author{Navn Her}
+\date{\vspace{-12ex}}
+\title{%
+  Dette er en overskrift til en opgave på SDU \\
+  \vspace{1ex}
+  \large Dette er den der tilhørende underoverskrift \\
+    som skal få opgaven til at se godt ud}
+
+\usepackage{amsmath}% For the equation* environment
+\usepackage{graphicx}
+\usepackage[yyyymmdd]{datetime}
+\usepackage{wrapfig}
+\usepackage{tikz}
+\usepackage{blindtext}
+\graphicspath{ {./images/} }
 \begin{document}
 \include{forside}
-\thispagestyle{empty}
 \tableofcontents
 \thispagestyle{empty}
 \newpage
 \setcounter{page}{1}
+
 \addcontentsline{toc}{section}{Introduction}
 \section*{Introduction}
 
@@ -22,5 +34,8 @@
 
 \addcontentsline{toc}{section}{Conclusion}
 \section*{Conclusion}
+
+\addcontentsline{toc}{section}{References}
+\section*{References}
 
 \end{document}
